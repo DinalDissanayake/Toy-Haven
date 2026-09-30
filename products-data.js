@@ -1,0 +1,147 @@
+
+const PRODUCTS = [
+  {
+    id: 'star-racer',
+    name: 'Star Racer Model',
+    category: 'Diecast Cars',
+    price: 4950,
+    image: 'assets/huy-hung-trinh-zoyBqT7ytLU-unsplash.jpg',
+    description: 'A bright little racer with authentic wheel rims and pristine blister pack presentation.',
+    badge: 'Staff Pick',
+    rating: 4.9,
+    reviews: 14,
+    tag: '1:64 Scale | Mint Condition'
+  },
+  {
+    id: 'woodland-express',
+    name: 'Woodland Express',
+    category: 'Toys',
+    price: 6900,
+    image: 'assets/jerry-wang-qBrF1yu5Wys-unsplash.jpg',
+    description: 'A handcrafted natural beechwood railway set with magnetic coupling cars and smooth track rails.',
+    badge: 'Heirloom Toy',
+    rating: 5.0,
+    reviews: 22,
+    tag: 'Natural Wood | Age 3+'
+  },
+  {
+    id: 'arcade-heroes',
+    name: 'Arcade Heroes Set',
+    category: 'Figurines',
+    price: 8250,
+    image: 'assets/ryan-quintal-xioKwVlp5jE-unsplash.jpg',
+    description: 'A colorful crew of familiar 8-bit legends with poseable joints and retro collector packaging.',
+    badge: 'Limited Stock',
+    rating: 4.8,
+    reviews: 19,
+    tag: 'Collector Grade | 12cm'
+  },
+  {
+    id: 'playroom-puzzle',
+    name: 'Playroom Puzzle',
+    category: 'Board Games',
+    price: 3450,
+    image: 'assets/vanessa-bucceri-gDiRwIYAMA8-unsplash.jpg',
+    description: 'A delightful 500-piece family tabletop puzzle featuring thick recycled board and matte print finish.',
+    badge: 'Family Pick',
+    rating: 4.7,
+    reviews: 11,
+    tag: '500 Pieces | Matte Finish'
+  },
+  {
+    id: 'galaxy-friends',
+    name: 'Galaxy Friends',
+    category: 'Figurines',
+    price: 7800,
+    image: 'assets/chris-hardy-H5Ffv4I5ZMI-unsplash.jpg',
+    description: 'Detailed sci-fi squad figures with interchangeable accessories and window collector display box.',
+    badge: 'Collector Classic',
+    rating: 4.9,
+    reviews: 31,
+    tag: 'Window Display Box'
+  },
+  {
+    id: 'retro-robot',
+    name: 'Retro Robot Crew',
+    category: 'Toys',
+    price: 5200,
+    image: 'assets/huy-hung-trinh-zoyBqT7ytLU-unsplash.jpg',
+    description: 'Tin-inspired robot companions with wind-up walking mechanism and nostalgic 80s lithograph detailing.',
+    badge: 'Retro Favorite',
+    rating: 4.8,
+    reviews: 16,
+    tag: 'Wind-up Mechanism'
+  },
+  {
+    id: 'shelf-legends',
+    name: 'Shelf Legends',
+    category: 'Figurines',
+    price: 9400,
+    image: 'assets/wu-yi-1MQZq-1diGY-unsplash.jpg',
+    description: 'Premium painted display statues with weighted acrylic stands and numbered certificate cards.',
+    badge: 'Rare Find',
+    rating: 5.0,
+    reviews: 27,
+    tag: 'Numbered Certificate'
+  },
+  {
+    id: 'classic-play-kit',
+    name: 'Classic Play Kit',
+    category: 'Board Games',
+    price: 4100,
+    image: 'assets/vanessa-bucceri-gDiRwIYAMA8-unsplash.jpg',
+    description: 'A multi-game wooden compendium including chess, checkers, and backgammon in a folding cedar box.',
+    badge: 'Best Value',
+    rating: 4.9,
+    reviews: 18,
+    tag: 'Solid Cedar Box'
+  },
+  {
+    id: 'mini-motor-club',
+    name: 'Mini Motor Club',
+    category: 'Diecast Cars',
+    price: 5850,
+    image: 'assets/huy-hung-trinh-zoyBqT7ytLU-unsplash.jpg',
+    description: 'Set of four diecast cruisers with working spring suspension and opening engine covers.',
+    badge: 'Staff Pick',
+    rating: 4.9,
+    reviews: 24,
+    tag: '4-Pack Set | 1:64'
+  },
+  {
+    id: 'pixel-champions',
+    name: 'Pixel Champions',
+    category: 'Figurines',
+    price: 6750,
+    image: 'assets/ryan-quintal-Rt0fXXXvf4w-unsplash.jpg',
+    description: 'Authentic arcade fighting game miniatures with battle bases and holographic collector stickers.',
+    badge: 'Collector Classic',
+    rating: 4.8,
+    reviews: 15,
+    tag: 'Holo Sticker Included'
+  },
+  {
+    id: 'storybook-friends',
+    name: 'Storybook Friends',
+    category: 'Toys',
+    price: 7200,
+    image: 'assets/ryan-quintal-Rt0fXXXvf4w-unsplash.jpg',
+    description: 'Whimsical articulated wooden creatures with eco-friendly non-toxic paint and canvas storage pouch.',
+    badge: 'Eco-Friendly',
+    rating: 4.9,
+    reviews: 13,
+    tag: 'Non-Toxic | Canvas Bag'
+  },
+  {
+    id: 'weekend-tabletop',
+    name: 'Weekend Tabletop',
+    category: 'Board Games',
+    price: 4650,
+    image: 'assets/vanessa-bucceri-gDiRwIYAMA8-unsplash.jpg',
+    description: 'A fast-paced card and dice strategy game for 2 to 6 players, perfect for rainy weekend evenings.',
+    badge: 'Game Night Hit',
+    rating: 4.8,
+    reviews: 20,
+    tag: '2-6 Players | 45 Mins'
+  }
+];

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#12141a">
+    <meta name="description" content="Browse authentic figurines, heirloom wooden toys, family board games, and 1:64 diecast models at Toy Haven.">
+    <title>Store Catalogue | Toy Haven &bull; Est. 1987</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body data-page="products">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Top Announcement Strip -->
+    <aside class="top-announcement" aria-label="Store announcement">
+      <div class="announcement-inner">
+        <span>Kurunegala Shop &amp; Island-Wide Delivery across Sri Lanka</span>
+        <span class="announcement-divider" aria-hidden="true">&bull;</span>
+        <span>Hand-Inspected Box Condition Guarantee</span>
+        <span class="announcement-divider" aria-hidden="true">&bull;</span>
+        <span>Collector Inquiries &amp; WhatsApp: <strong>+94 37 222 8900</strong></span>
+      </div>
+    </aside>
+
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Toy Haven Home">
+          <img src="assets/logo.png" alt="Toy Haven emblem" width="46" height="46">
+          <span>
+            TOY HAVEN
+            <small>Est. 1987 &bull; The Collector's Corner</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html" class="active" aria-current="page">Catalogue</a>
+          <a href="wishlist.html">Saved Shelf</a>
+          <a href="cart.html">Bag</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="support.html">Store &amp; Support</a>
+        </nav>
+
+        <a class="header-cart" href="cart.html" aria-label="View shopping bag">
+          <span>Bag</span>
+          <strong id="cart-count">0</strong>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Store Catalogue Banner -->
+      <section class="page-banner shop-banner" aria-label="Catalogue banner">
+        <div>
+          <span class="eyebrow">Full Collection</span>
+          <h1>Curated Toys &amp; Collectibles</h1>
+          <p>Every piece in our shop is hand-inspected for blister pack condition, paint quality, and authentic manufacturing before heading onto the display shelf.</p>
+        </div>
+      </section>
+
+      <!-- Products Filter & Search Toolbar -->
+      <section class="section-wrap products-section">
+        <div class="toolbar">
+          <div class="filter-list" role="group" aria-label="Filter products by department">
+            <button type="button" class="filter active" data-filter="All">All Items</button>
+            <button type="button" class="filter" data-filter="Figurines">Figurines</button>
+            <button type="button" class="filter" data-filter="Toys">Toys</button>
+            <button type="button" class="filter" data-filter="Board Games">Board Games</button>
+            <button type="button" class="filter" data-filter="Diecast Cars">Diecast Cars</button>
+          </div>
+
+          <label class="search-box">
+            <span class="sr-only">Search products by keyword</span>
+            <input id="product-search" type="search" placeholder="Search by model or character...">
+            <span aria-hidden="true">&#9906;</span>
+          </label>
+        </div>
+
+        <p class="result-count" id="result-count" role="status"></p>
+
+        <!-- Product Grid rendered by script.js -->
+        <div class="product-grid" id="products-grid"></div>
+
+        <p class="empty-state" id="products-empty" hidden>No matching pieces found on the shelf. Try another keyword or switch category filters.</p>
+      </section>
+
+      <!-- Product Detail Modal Dialog -->
+      <dialog id="product-dialog" class="product-dialog" aria-label="Product details window">
+        <button type="button" class="dialog-close" aria-label="Close product details">&times;</button>
+        <div id="dialog-content"></div>
+      </dialog>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html">TOY HAVEN<span>EST. 1987 &bull; KURUNEGALA</span></a>
+          <p>An independent toy &amp; collector's corner on Colombo Road, Kurunegala. Curating quality figures, heirloom wooden sets, board games, and precision diecast models since 1987.</p>
+        </div>
+
+        <div>
+          <h2>Explore the Store</h2>
+          <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Catalogue</a>
+            <a href="wishlist.html">Saved Shelf</a>
+            <a href="cart.html">Bag</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="support.html">Store &amp; Support</a>
+          </nav>
+        </div>
+
+        <div>
+          <h2>The Collector's Dispatch</h2>
+          <p>Get occasional updates on rare restocks, new arrivals, and collector notes. Never spam.</p>
+          <form id="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <div class="newsletter-input">
+              <input id="newsletter-email" name="email" type="email" placeholder="Your email address" required>
+              <button type="submit" aria-label="Subscribe to newsletter">&rarr;</button>
+            </div>
+            <p class="form-message" id="newsletter-message" role="status"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Toy Haven Sri Lanka. Made for play, kept for years. Handcrafted front-end coursework.</span>
+        <span>No. 42 Colombo Road, Kurunegala, Sri Lanka</span>
+      </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
